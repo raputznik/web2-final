@@ -12,17 +12,10 @@ body {
 	font-family: Helvetica, Arial, sans-serif;
 }
 
-/*a {
-	text-decoration: none;
-	color: green;
+.header {
+	margin: 1em 0.5em 1em 0.5em;
 
 }
-*/
-/*a:hover {
-	color: red;
-	cursor:pointer;  
-
-*/}
 
 .container {
 	min-width: 320px;
@@ -31,30 +24,50 @@ body {
 
 }
 
-#nav {
+/*.navbar {
+	margin: 0 0em 0em 0em;
+
+}
+*/
+.nav {
 	width: 100%;
 	float: left;
-	margin: 0 0 3em 0;
+	margin: 0 0.5em 0em 0.5em;
 	padding: 0;
 	list-style: none;
 	background-color: #f2f2f2;
 	border-bottom: 1px solid #ccc; 
-	border-top: 1px solid #ccc; }
-#nav li {
-	float: left; }
-#nav li a {
+	border-top: 1px solid #ccc; 
+
+}
+
+.nav li {
+	float: left; 
+
+}
+
+.nav li a {
 	display: block;
 	padding: 8px 15px;
 	text-decoration: none;
 	font-weight: bold;
 	color: #069;
-	border-right: 1px solid #ccc; }
-#nav li a:hover {
+	border-right: 1px solid #ccc; 
+
+}
+
+.nav li a:hover {
 	color: #c00;
-	background-color: #fff; }.yourmom {
+	background-color: #fff; 
+
+}
+
+
+.content {
 	border: solid 1px;
 	height: 10em;
-	vertical-align: middle;
+	/*vertical-align: middle;*/
+	margin: 3em 0.5em 0.5em 0.5em;
 }
 
 
