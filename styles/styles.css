@@ -64,7 +64,7 @@ body {
 
 
 .content {
-	border: solid 1px;
+	/*border: solid 1px;*/
 	height: 10em;
 	/*vertical-align: middle;*/
 	margin: 3em 0.5em 0.5em 0.5em;
