@@ -6,6 +6,8 @@
 	<link rel="stylesheet" type="text/css" href="styles/styles.css">
 	<link href='http://fonts.googleapis.com/css?family=Josefin+Sans:400,700' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Gentium+Basic:700italic,700' rel='stylesheet' type='text/css'>
+	<script src="scripts/jquery-1.10.2.min.js"></script>
+	<script src="scripts/scripts.js"></script>
 </head>
 <body>
 	<div class="container">
@@ -17,29 +19,29 @@
 			<ul class="nav">
 				<li><a href="#">ABOUT</a></li>
 				<li><a href="#">CONTACT</a></li>
-				<li><a href="#">POLL</a></li>
+				<li id="button"><a href="#">POLL</a></li>
 				<li><a href="#">RESULTS</a></li>
 			</ul>
 		</nav>
 		<div class="poll">
 			<form id="form1" action="scripts/form-process.php" method="post">
 				<h2>What is your favourite book below?</h2>
-				A Tale of Two Cities - Charles Dickens <input id="vote1" type="radio" name="vote1" value="1"> <br>
-				The Hitchhiker's Guide to the Galaxy - Douglas Adams <input id="vote2" type="radio" name="vote2" value="2"><br>
-				Cat's Cradle - Kurt Vonnegut <input id="vote3" type="radio" name="vote3" value="3"><br>
-		 		DaVinci's Code - Dan Brown <input id="vote4" type="radio" name="vote4" value="4"><br>
+				A Tale of Two Cities - Charles Dickens <input id="vote1" type="radio" name="vote" value="1"> <br>
+				The Hitchhiker's Guide to the Galaxy - Douglas Adams <input id="vote2" type="radio" name="vote" value="2"><br>
+				Cat's Cradle - Kurt Vonnegut <input id="vote3" type="radio" name="vote" value="3"><br>
+		 		DaVinci's Code - Dan Brown <input id="vote4" type="radio" name="vote" value="4"><br>
 
 				<input id="button" type="submit" name="submit" value="submit">
 			</form>
 			
 		</div>
-<!-- 		<article class="content">
+		<article class="content">
 			<h2>About Prefect's Books</h2>
 			<br>
 			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy </p>
 			
 		</article>
- -->	
+	
 
 	</div>
 

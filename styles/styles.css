@@ -51,8 +51,8 @@ h2 {
 
 body {
 	font-family: 'klinic_slabbook';
-	background-color: #7f7f7f;
-	text-rendering: optimizelegibility;
+/*	background-color: #7f7f7f;
+*/	text-rendering: optimizelegibility;
 }
 
 .header {
@@ -67,7 +67,9 @@ body {
 	height: 600px;
 	margin: 0 auto;
 	background-color: white;
-
+	-moz-box-shadow: 0 0 5px 5px #888;
+	-webkit-box-shadow: 0 0 5px 5px#888;
+	box-shadow: 0 0 30px 5px #888;
 }
 
 .navbar {
@@ -116,7 +118,8 @@ body {
 }
 
 .poll {
-		line-height: 2em;
+/*		display: none;
+*/		line-height: 2em;
 
 }
 
