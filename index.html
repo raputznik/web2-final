@@ -4,8 +4,6 @@
 	<meta charset="UTF-8">
 	<title>Jeremy Dahl's Web2 Final</title>
 	<link rel="stylesheet" type="text/css" href="styles/styles.css">
-	<link href='http://fonts.googleapis.com/css?family=Josefin+Sans:400,700' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Gentium+Basic:700italic,700' rel='stylesheet' type='text/css'>
 	<script src="scripts/jquery-1.10.2.min.js"></script>
 	<script src="scripts/scripts.js"></script>
 </head>
@@ -17,30 +15,52 @@
 		</header>
 		<nav class="navbar">
 			<ul class="nav">
-				<li><a href="#">ABOUT</a></li>
-				<li><a href="#">CONTACT</a></li>
-				<li id="button"><a href="#">POLL</a></li>
-				<li><a href="#">RESULTS</a></li>
+				<li id="about"><a href="#">ABOUT</a></li>
+				<li id="contact"><a href="#">CONTACT</a></li>
+				<li id="poll"><a href="#">POLL</a></li>
+				<li id="results"><a href="#">RESULTS</a></li>
 			</ul>
 		</nav>
-		<div class="poll">
+		<section class="poll">
 			<form id="form1" action="scripts/form-process.php" method="post">
 				<h2>What is your favourite book below?</h2>
-				A Tale of Two Cities - Charles Dickens <input id="vote1" type="radio" name="vote" value="1"> <br>
+				<p>A Tale of Two Cities - Charles Dickens <input id="vote1" type="radio" name="vote" value="1"> <br>
 				The Hitchhiker's Guide to the Galaxy - Douglas Adams <input id="vote2" type="radio" name="vote" value="2"><br>
 				Cat's Cradle - Kurt Vonnegut <input id="vote3" type="radio" name="vote" value="3"><br>
 		 		DaVinci's Code - Dan Brown <input id="vote4" type="radio" name="vote" value="4"><br>
 
-				<input id="button" type="submit" name="submit" value="submit">
+				<input id="button" type="submit" name="submit" value="submit"></p>
 			</form>
 			
-		</div>
-		<article class="content">
+		</section>
+		<section class="about">
 			<h2>About Prefect's Books</h2>
 			<br>
-			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy </p>
+			<p>Specializing in all aspects of Judaica, Hebraica, and Holocaust Studies, we are a major source of scholarly In-Print and Out-of-Print Judaic, Hebraic and Holocaust Studies books.</p><br>
+			<h3>Ideal Books</h3>
+
+			<p>Books are available in Hebrew, English, German, French, and other languages.</p>
 			
-		</article>
+		</section>
+		<section class="contact">
+			<h2>Contact</h2>
+			<br>
+			<p>Specializing in all aspects of Judaica, Hebraica, and Holocaust Studies, we are a major source of scholarly In-Print and Out-of-Print Judaic, Hebraic and Holocaust Studies books.</p><br>
+			<h3>Ideal Books</h3>
+
+			<p>Books are available in Hebrew, English, German, French, and other languages.</p>
+			
+		</section>
+		<section class="results">
+			<h2>Results</h2>
+			<br>
+			<p>Specializing in all aspects of Judaica, Hebraica, and Holocaust Studies, we are a major source of scholarly In-Print and Out-of-Print Judaic, Hebraic and Holocaust Studies books.</p><br>
+			<h3>Ideal Books</h3>
+
+			<p>Books are available in Hebrew, English, German, French, and other languages.</p>
+			
+		</section>
+	
 	
 
 	</div>
