@@ -23,12 +23,12 @@
 			</ul>
 		</nav>
 		<section class="poll">
-			<form id="form1" action="scripts/form-process.php" method="post">
+			<form id="form1" action="poll.php" method="post">
 				<h2>What is your favourite book below?</h2>
 				<p>A Tale of Two Cities - Charles Dickens <input id="vote1" type="radio" name="vote" value="1"> <br>
 				The Hitchhiker's Guide to the Galaxy - Douglas Adams <input id="vote2" type="radio" name="vote" value="2"><br>
 				Cat's Cradle - Kurt Vonnegut <input id="vote3" type="radio" name="vote" value="3"><br>
-		 		DaVinci's Code - Dan Brown <input id="vote4" type="radio" name="vote" value="4"><br>
+		 		The DaVinci Code - Dan Brown <input id="vote4" type="radio" name="vote" value="4"><br>
 
 				<input id="button" type="submit" name="submit" value="submit"></p>
 			</form>
@@ -47,21 +47,15 @@
 			<h2>Contact Us</h2>
 			<br>
 			<p>We look forward to hearing from you. Please drop us a line below.</p><br />
-			  <form id="contact_form" method="post" action="scripts/contact.php">
-			    <p><label>Name:<br />
-			    <input type="text" name="name" class="textfield" value="" />
-			    </label></p>
-			 
-			    <p><label>Email: <br />
-			    <input type="text" name="email" class="textfield" value="" />
-			    </label></p>
-			 
-			    <p><label>Message: <br />
-			    <textarea name="message" class="textarea" cols="45" rows="5"></textarea>
-			    </label></p>
-			 
-			    <p><input type="submit" name="submit" class="button" value="Submit" /></p>
-			  </form>			
+			<form action="mail.php" method="POST">
+				<p>Name</p> <input type="text" name="name">
+
+				<p>Email</p> <input type="text" name="email">
+
+				<p>Message</p><textarea name="message" rows="6" cols="25"></textarea><br />
+
+				<input type="submit" value="Send"><input type="reset" value="Clear">
+			</form>
 		</section>
 		<section class="results">
 			<h2>Results</h2>
