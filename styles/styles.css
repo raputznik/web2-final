@@ -51,8 +51,8 @@ h2 {
 
 body {
 	font-family: 'klinic_slabbook';
-/*	background-color: #7f7f7f;
-*/	text-rendering: optimizelegibility;
+	/*background-color: #7f7f7f;*/
+	text-rendering: optimizelegibility;
 }
 
 section {
@@ -108,7 +108,8 @@ section {
 
 .nav li a {
 	display: block;
-	padding: 8px 25px;
+	padding: 8px 0.5em;
+	/*background-color: orange;*/
 	text-decoration: none;
 	font-weight: bold;
 	color: #069;

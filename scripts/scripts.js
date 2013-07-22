@@ -19,6 +19,10 @@ $(document).ready(function(){
 		$(".about, .poll, .contact").hide();
 	});
 
+	// ( function( $ ) {
+ //   $( 'a[href="#"]' ).click( function(e) {
+ //      e.preventDefault();
+ //   } );
 
 
 });
