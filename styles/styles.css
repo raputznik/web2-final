@@ -4,18 +4,18 @@
 }
 
 h1 {
-	font: 700 2.7em 'Roboto Slab', serif;
+	font: 700 2.7em 'Averia Serif Libre', serif;
 	color: #d7d6d6;
 }
 
 h2 {
-	font: 700 'Roboto Slab', serif;
+	font: 700 'Averia Serif Libre', serif;
 	color: #d7d6d6;
 
 }
 
 body {
-	font: 300 1em 'Roboto Slab', serif;
+	font: 300 1em 'Averia Serif Libre', serif;
 	color: #d7d6d6;
 	text-rendering: optimizelegibility;
 	background-color: #c7c7c7;
@@ -27,9 +27,17 @@ section {
 }
 
 .header {
-	display: block;
 	margin: 0em 0.5em 0.5em 0.5em;
 	padding-top: 0.5em;
+	
+}
+
+.title {
+	float: right;
+	margin-right: 6.5em;
+}
+
+.logo {
 	
 }
 
