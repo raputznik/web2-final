@@ -3,56 +3,20 @@
   padding: 0;
 }
 
-@font-face {
-    font-family: 'sansita_oneregular';
-    src: url('../fonts/sansitaone-webfont.eot');
-    src: url('../fonts/sansitaone-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/sansitaone-webfont.woff') format('woff'),
-         url('../fonts/sansitaone-webfont.ttf') format('truetype'),
-         url('../fonts/sansitaone-webfont.svg#sansita_oneregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {
-    font-family: 'klinic_slabbook';
-    src: url('../fonts/klinicslabbook-webfont.eot');
-    src: url('../fonts/klinicslabbook-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/klinicslabbook-webfont.woff') format('woff'),
-         url('../fonts/klinicslabbook-webfont.ttf') format('truetype'),
-         url('../fonts/klinicslabbook-webfont.svg#klinic_slabbook') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-
-@font-face {
-    font-family: 'klinic_slabbold';
-    src: url('../fonts/klinicslabbold-webfont.eot');
-    src: url('../fonts/klinicslabbold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/klinicslabbold-webfont.woff') format('woff'),
-         url('../fonts/klinicslabbold-webfont.ttf') format('truetype'),
-         url('../fonts/klinicslabbold-webfont.svg#klinic_slabbold') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
 h1 {
-	font-family: 'sansita_oneregular'; 
-	font-size: 2.5em;
+	font-family: 'Roboto Slab', serif;
+	font-weight: 700;
+	font-size: 2.7em;
 }
 
 h2 {
-	font-family: 'klinic_slabbold';
+	font-family: 'Roboto Slab', serif;
 }
 
 body {
-	font-family: 'klinic_slabbook';
-	/*background-color: #7f7f7f;*/
-	text-rendering: optimizelegibility;
+	font-family: 'Roboto Slab', serif;
+/*	font-weight: 400;
+*/	text-rendering: optimizelegibility;
 }
 
 section {
@@ -89,7 +53,11 @@ section {
 	float: left;
 	padding: 0;
 	list-style: none;
-	background-color: #f2f2f2;
+	/*background-color: #f2f2f2;*/
+	background: -webkit-linear-gradient(left, #473803, #a90202); 
+	background: -moz-linear-gradient(left, #473803, #a90202);
+	background: -ms-linear-gradient(left, #473803, #a90202); 
+	background: -o-linear-gradient(left, #473803, #a90202);
 	border-bottom: 1px solid #ccc; 
 	border-top: 3px solid #ccc; 
     -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
@@ -107,10 +75,9 @@ section {
 .nav li a {
 	display: block;
 	padding: 8px 0.5em;
-	/*background-color: orange;*/
 	text-decoration: none;
-	font-weight: bold;
-	color: #069;
+	font-weight: 400;
+	color: #fff;
 	border-right: 1px solid #ccc; 
 
 }
@@ -151,11 +118,8 @@ section {
 	display: inline-block;
 }
 
-.contact p {
-	float: left;
-	clear: both;
-	display: inline-block;
-
+#conp2 {
+	margin: 1em 0 1em 0;
 }
 
 .social {
