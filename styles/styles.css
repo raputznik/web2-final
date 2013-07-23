@@ -4,19 +4,16 @@
 }
 
 h1 {
-	font-family: 'Roboto Slab', serif;
-	font-weight: 700;
-	font-size: 2.7em;
+	font: 700 2.7em 'Roboto Slab', serif;
 }
 
 h2 {
-	font-family: 'Roboto Slab', serif;
+	font: 700 'Roboto Slab', serif;
 }
 
 body {
-	font-family: 'Roboto Slab', serif;
-/*	font-weight: 400;
-*/	text-rendering: optimizelegibility;
+	font: 300 1em 'Roboto Slab', serif;
+	text-rendering: optimizelegibility;
 }
 
 section {
