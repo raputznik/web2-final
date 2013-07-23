@@ -64,7 +64,7 @@ section {
 .header {
 	margin: 0em 0.5em 0.5em 0.5em;
 	padding-top: 0.5em;
-	/*background-color: green;*/
+	
 
 }
 
@@ -91,7 +91,7 @@ section {
 	list-style: none;
 	background-color: #f2f2f2;
 	border-bottom: 1px solid #ccc; 
-	border-top: 1px solid #ccc; 
+	border-top: 3px solid #ccc; 
     -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
     -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
     box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
@@ -101,8 +101,6 @@ section {
 
 .nav li {
 	float: left; 
-
-
 
 }
 
@@ -115,14 +113,12 @@ section {
 	color: #069;
 	border-right: 1px solid #ccc; 
 
-
 }
 
 .nav li a:hover {
 	color: #c00;
 	background-color: #fff; 
 	transition: .3s;
-
 
 }
 
@@ -148,4 +144,5 @@ section {
 #button {
 	width: 50%;
 }
+
 
