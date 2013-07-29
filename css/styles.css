@@ -114,11 +114,6 @@ section {
 
 }
 
-.poll input {
-    width: 100%;
-    clear: both;
-}
-
 #button {
 	width: 50%;
 }
@@ -189,3 +184,14 @@ section {
     background-position: -69px -69px;
 }
 
+.submit {
+	width: 25%;
+	height: 2em;
+	clear: both;
+	border: 1px solid #000;
+	-webkit-box-shadow: 0 0 4px #454545;
+	-moz-box-shadow: 0 0 4px #fff;
+	box-shadow: 0 0 4px #fff;
+
+
+}

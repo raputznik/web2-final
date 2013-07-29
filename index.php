@@ -4,24 +4,13 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width" />
 	<title>Jeremy Dahl's Web2 Final</title>
-	<link rel="stylesheet" type="text/css" href="styles/styles.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
 	<link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300,100' rel='stylesheet' type='text/css'>	
 	<link href='http://fonts.googleapis.com/css?family=Averia+Serif+Libre:700' rel='stylesheet' type='text/css'>
-	<script src="scripts/jquery-1.10.2.min.js"></script>
-	<script src="scripts/scripts.js"></script>
+	<script src="js/jquery-1.10.2.min.js"></script>
+	<script src="js/scripts.js"></script>
 </head>
 <body>
-	<?php 
-     $file = "votes.txt"; 
-
-		$title = "What is your favourite book below?"; 
- 	$answers = array("A Tale of Two Cities - Charles Dickens",         
-                  "The Hitchhiker's Guide to the Galaxy - Douglas Adams",   
-                  "Cat's Cradle - Kurt Vonnegut",
-                  "The DaVinci Code - Dan Brown");
-
-
- 	?>
 
 	<div class="container">
 		<header class="header">
@@ -44,6 +33,18 @@
 		</nav>
 
 		<section class="poll">
+			<?php 
+		     $file = "votes.txt"; 
+
+				$title = "What is your favourite book below?"; 
+		 	$answers = array("A Tale of Two Cities - Charles Dickens",         
+		                  "The Hitchhiker's Guide to the Galaxy - Douglas Adams",   
+		                  "Cat's Cradle - Kurt Vonnegut",
+		                  "The DaVinci Code - Dan Brown");
+
+
+		 	?>
+
 			<h3><?php echo $title; ?></h3>
 			<p>
 			  <form action="<?php echo $_SERVER["PHP_SELF"]; ?>" method="post">
@@ -54,7 +55,7 @@
 			    ?><input type="radio" name="vote" value="<?php echo $i; ?>"> <?php echo $answers[$i]; ?><br /><?php
 			  }
 			?>
-		    <p><input type="submit" value="Vote!"></p>
+		    <p><input type="submit" class="submit" value="Vote!"></p>
 		  	</form>
 			</p>
 			<h3>Results</h3>
