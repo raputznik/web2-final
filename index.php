@@ -11,6 +11,19 @@
 	<script src="scripts/scripts.js"></script>
 </head>
 <body>
+			<?php 
+	         $file = "votes.txt"; 
+
+     		$title = "What is your favourite book below?"; 
+         	$answers = array("A Tale of Two Cities - Charles Dickens",         
+                          "The Hitchhiker's Guide to the Galaxy - Douglas Adams",   // answers
+                          "Cat's Cradle - Kurt Vonnegut",
+                          "The DaVinci Code - Dan Brown");
+
+
+		 ?>
+
+
 	<div class="container">
 		<header class="header">
 			<div class="title"><h1>Prefect's Books
@@ -28,18 +41,6 @@
 				<li id="results"><a href="#">RESULTS</a></li>
 			</ul>
 		</nav>
-
-		<?php 
-	         $file = "votes.txt"; 
-
-     		$title = "What is your favourite book below?"; 
-         	$answers = array("A Tale of Two Cities - Charles Dickens",         
-                          "The Hitchhiker's Guide to the Galaxy - Douglas Adams",   // answers
-                          "Cat's Cradle - Kurt Vonnegut",
-                          "The DaVinci Code - Dan Brown");
-
-
-		 ?>
 
 		<section class="poll">
 			<h3><?php echo $title; ?></h3>
