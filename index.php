@@ -28,16 +28,62 @@
 				<li id="results"><a href="#">RESULTS</a></li>
 			</ul>
 		</nav>
-		<section class="poll">
-			<form id="form1" action="poll.php" method="post">
-				<h2>What is your favourite book below?</h2>
-				<p>A Tale of Two Cities - Charles Dickens <input id="vote1" type="radio" name="vote" value="1"> <br>
-				The Hitchhiker's Guide to the Galaxy - Douglas Adams <input id="vote2" type="radio" name="vote" value="2"><br>
-				Cat's Cradle - Kurt Vonnegut <input id="vote3" type="radio" name="vote" value="3"><br>
-		 		The DaVinci Code - Dan Brown <input id="vote4" type="radio" name="vote" value="4"><br>
 
-				<input id="button" type="submit" name="submit" value="submit"></p>
-			</form>
+		<?php 
+	         $file = "votes.txt"; 
+
+     		$title = "What is your favourite book below?"; 
+         	$answers = array("A Tale of Two Cities - Charles Dickens",         
+                          "The Hitchhiker's Guide to the Galaxy - Douglas Adams",   // answers
+                          "Cat's Cradle - Kurt Vonnegut",
+                          "The DaVinci Code - Dan Brown");
+
+
+		 ?>
+
+		<section class="poll">
+			<h3><?php echo $title; ?></h3>
+			<p>
+			  <form action="<?php echo $_SERVER["PHP_SELF"]; ?>" method="post">
+			<?php
+			  //print possible answers
+			  for($i=0;$i<count($answers);$i++){
+			    ?><input type="radio" name="vote" value="<?php echo $i; ?>"> <?php echo $answers[$i]; ?><br /><?php
+			  }
+			?>
+			    <p><input type="submit" value="Vote!"></p>
+			  </form>
+			</p>
+			<h3>Results</h3>
+			<p>
+			<?php
+			  //read votes
+			  $votes = file($file);
+			  $total = 0;
+			  $vote = $_POST["vote"];
+
+			  //submit vote
+			  if(isset($vote)){
+			    $votes[$vote] = $votes[$vote]+1;
+			  }
+
+			  //write votes
+			  $handle = fopen($file,"w");
+
+			  foreach($votes as $v){
+			    $total += $v;
+			    fputs($handle,chop($v)."\n");
+			  }
+
+			  fclose($handle);
+
+			  //print votes
+			  for($i=0;$i<count($answers);$i++){
+			    echo "{$votes[$i]} {$answers[$i]}<br />";
+			  }
+			?>
+			</p>
+			<p>Total: <?php echo $total; ?> votes.</p>
 			
 		</section>
 		<section class="about">
