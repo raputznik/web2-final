@@ -33,15 +33,16 @@
 		</nav>
 
 		<section class="poll">
+			
 			<?php 
-		     $file = "votes.txt"; 
+
+			    $file = "votes.txt"; 
 
 				$title = "What is your favourite book below?"; 
-		 	$answers = array("A Tale of Two Cities - Charles Dickens",         
-		                  "The Hitchhiker's Guide to the Galaxy - Douglas Adams",   
-		                  "Cat's Cradle - Kurt Vonnegut",
-		                  "The DaVinci Code - Dan Brown");
-
+			 	$answers = array("A Tale of Two Cities - Charles Dickens",         
+			                  "The Hitchhiker's Guide to the Galaxy - Douglas Adams",   
+			                  "Cat's Cradle - Kurt Vonnegut",
+			                  "The DaVinci Code - Dan Brown");
 
 		 	?>
 
