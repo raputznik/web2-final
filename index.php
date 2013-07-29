@@ -129,6 +129,35 @@
 		<section class="results">
 			<h2>Results</h2>
 			<br>
+			<?php
+			  //read votes
+			  $votes = file($file);
+			  $total = 0;
+			  $vote = $_POST["vote"];
+
+			  //submit vote
+			  if(isset($vote)){
+			    $votes[$vote] = $votes[$vote]+1;
+			  }
+
+			  //write votes
+			  $handle = fopen($file,"w");
+
+			  foreach($votes as $v){
+			    $total += $v;
+			    fputs($handle,chop($v)."\n");
+			  }
+
+			  fclose($handle);
+
+			  //print votes
+			  for($i=0;$i<count($answers);$i++){
+			    echo "{$votes[$i]} {$answers[$i]}<br />";
+			  }
+			?>
+			</p>
+			<p>Total: <?php echo $total; ?> votes.</p>
+			<br>
 		</section>
 
 	</div>
