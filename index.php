@@ -13,12 +13,12 @@
 <body>
 
 	<div class="container">
-		<header class="header">
+		<header class="header"><a href="index.php">
 			<div class="title"><h1>Prefect's Books
 			</h1>
 			</div>	
-			<div class="logo">
-				<img src="images/book.svg" alt="book logo">
+			</a><div class="logo">
+				<a href="index.php"><img src="images/book.svg" alt="book logo"></a>
 					
 			</div>	
 		</header>
