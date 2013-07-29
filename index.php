@@ -11,28 +11,29 @@
 	<script src="scripts/scripts.js"></script>
 </head>
 <body>
-			<?php 
-	         $file = "votes.txt"; 
+	<?php 
+     $file = "votes.txt"; 
 
-     		$title = "What is your favourite book below?"; 
-         	$answers = array("A Tale of Two Cities - Charles Dickens",         
-                          "The Hitchhiker's Guide to the Galaxy - Douglas Adams",   // answers
-                          "Cat's Cradle - Kurt Vonnegut",
-                          "The DaVinci Code - Dan Brown");
+		$title = "What is your favourite book below?"; 
+ 	$answers = array("A Tale of Two Cities - Charles Dickens",         
+                  "The Hitchhiker's Guide to the Galaxy - Douglas Adams",   
+                  "Cat's Cradle - Kurt Vonnegut",
+                  "The DaVinci Code - Dan Brown");
 
 
-		 ?>
-
+ 	?>
 
 	<div class="container">
 		<header class="header">
 			<div class="title"><h1>Prefect's Books
-							</h1></div>	
+			</h1>
+			</div>	
 			<div class="logo">
 				<img src="images/book.svg" alt="book logo">
 					
-				</div>	
+			</div>	
 		</header>
+
 		<nav class="navbar">
 			<ul class="nav">
 				<li id="about"><a href="#">ABOUT</a></li>
@@ -46,14 +47,15 @@
 			<h3><?php echo $title; ?></h3>
 			<p>
 			  <form action="<?php echo $_SERVER["PHP_SELF"]; ?>" method="post">
+
 			<?php
-			  //print possible answers
+
 			  for($i=0;$i<count($answers);$i++){
 			    ?><input type="radio" name="vote" value="<?php echo $i; ?>"> <?php echo $answers[$i]; ?><br /><?php
 			  }
 			?>
-			    <p><input type="submit" value="Vote!"></p>
-			  </form>
+		    <p><input type="submit" value="Vote!"></p>
+		  	</form>
 			</p>
 			<h3>Results</h3>
 			<p>
