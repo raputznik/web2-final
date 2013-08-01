@@ -92,8 +92,7 @@
 		</section>
 		<section class="about">
 			<h2>About Prefect's Books</h2>
-			<br>
-			<p> <img src="images/bookstore.jpg" height="150" width="150" alt="bookstore"> We specialize in rare and hard-to-find books from the 20th century. Please come down and see us sometime, and we'll set you up with a nice book, and maybe a drink, if you come towards closing time.</p><br>
+			<p> <img src="images/bookstore.jpg" height="150" width="150" alt="bookstore"> We specialize in rare and hard-to-find books from the 20th century. Please come down and see us sometime, and we'll set you up with a nice book, and maybe a drink, if you come towards closing time.</p>
 			<h3>Ideal Books</h3>
 
 			<p>Books are available in Hebrew, English, German, French, and other languages.</p>
@@ -111,24 +110,20 @@
 			 
 			    <li><a href="http://feeds.feedburner.com" id="rss" rel="nofollow" target="_blank">RSS</a></li>
 			</ul>
-			<br>
-			<div id="conp2"><p>We look forward to hearing from you.<br> Please drop us a line below.</p></div>
-			<form action="mail.php" method="POST">
+			<!-- <br> -->
+			<div id="conp2"><p>We look forward to hearing from you. Please drop us a line below.</p></div>
+			<form class="form1" action="mail.php" method="POST">
 				<p>Name</p> <input type="text" name="name">
-				<br>
 
 				<p>Email</p> <input type="text" name="email">
-				<br>
 
 				<p>Message</p><textarea name="message" rows="6" cols="25"></textarea>
-				<br>
 
 				<input type="submit" value="Send"><input type="reset" value="Clear">
 			</form>
 		</section>
 		<section class="results">
 			<h2>Results</h2>
-			<br>
 			<?php
 			  //read votes
 			  $votes = file($file);
@@ -157,7 +152,7 @@
 			?>
 			</p>
 			<p>Total: <?php echo $total; ?> votes.</p>
-			<br>
+			<!-- <br> -->
 		</section>
 
 	</div>

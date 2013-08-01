@@ -93,8 +93,9 @@ section {
 
 }
 
-.about h3 {
-	line-height: 2em;
+.about h2, p, h3 {
+	margin-bottom: 1em;
+
 }
 
 .about img {
@@ -132,11 +133,16 @@ section {
 .contact h2 {
 	float: left;
 	clear: both;
-	display: inline-block;
+	margin: 0 0 0em 0;
 }
 
 #conp2 {
+	float: left;
 	margin: 1em 0 1em 0;
+}
+
+.form1 {
+	float: left;
 }
 
 .social {
