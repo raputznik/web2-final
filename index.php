@@ -5,7 +5,6 @@
 	<meta name="viewport" content="width=device-width" />
 	<title>Jeremy Dahl's Web2 Final</title>
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
-	<link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300,100' rel='stylesheet' type='text/css'>	
 	<link href='http://fonts.googleapis.com/css?family=Averia+Serif+Libre:700' rel='stylesheet' type='text/css'>
 	<script src="js/jquery-1.10.2.min.js"></script>
 	<script src="js/scripts.js"></script>
