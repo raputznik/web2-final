@@ -110,7 +110,6 @@
 			 
 			    <li><a href="http://feeds.feedburner.com" id="rss" rel="nofollow" target="_blank">RSS</a></li>
 			</ul>
-			<!-- <br> -->
 			<div id="conp2"><p>We look forward to hearing from you. Please drop us a line below.</p></div>
 			<form class="form1" action="mail.php" method="POST">
 				<p>Name</p> <input type="text" name="name">
@@ -152,7 +151,6 @@
 			?>
 			</p>
 			<p>Total: <?php echo $total; ?> votes.</p>
-			<!-- <br> -->
 		</section>
 
 	</div>
