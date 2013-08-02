@@ -149,7 +149,6 @@
 			    echo "{$votes[$i]} {$answers[$i]}<br />";
 			  }
 			?>
-			</p>
 			<p>Total: <?php echo $total; ?> votes.</p>
 		</section>
 
